@@ -49,3 +49,7 @@
 * app.get
     * router (라우팅)
         * 렌더링 할 페이지 연결
+
+* package.json
+    * node js 프로젝트에 필요한 여러 dependency를 기록한 문서
+    * 자동으로 목록을 읽어 설치해 줌
