@@ -21,5 +21,8 @@ const handlelistening = () => {
 
 const server = app.listen(PORT, handlelistening);
 
-const io = socketIO(server);
-
+// io : 발생한 이벤트
+const io = socketIO.listen(server);
+// eventemiter 로 이벤트를 만들 수 있다
+// connection 이라는 이벤트를 생성함
+io.on("connection", () => console.log("somebosy connected"));
